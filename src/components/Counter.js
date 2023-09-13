@@ -8,7 +8,7 @@ setInterval(() => {
   if (difference > 0) {
     timeLeft = {
       months: Math.floor(difference / (1000 * 60 * 60 * 24) / 30),
-      days: Math.floor((difference / (1000 * 60 * 60 * 24)) % 12),
+      days: Math.floor((difference / (1000 * 60 * 60 * 24)) % 30),
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60),
@@ -31,10 +31,10 @@ function Counter() {
   return (
     <div>
       <div id="time">
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
+        <div className="child"></div>
+        <div className="child"></div>
+        <div className="child"></div>
+        <div className="child"></div>
       </div>
     </div>
   );

@@ -1,11 +1,10 @@
-import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Counter from "./components/Counter";
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <Header />
       <Counter />
       <Footer />
